@@ -612,6 +612,7 @@ img{
 	margin: 0;
 	font-weight: 300;
 	text-align: left;
+	line-height: 1;
 }
 /**circle*/
 .grid_item.circle > .grid_body{
