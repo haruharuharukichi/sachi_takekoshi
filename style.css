@@ -608,7 +608,7 @@ img{
 .grid_item.text > .grid_body .body_description{
 	position: relative;
 	justify-content: flex-start;
-	align-self: flex-start;
+	align-self: start;
 	margin: 0;
 	font-weight: 300;
 	text-align: left;
