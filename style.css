@@ -135,6 +135,10 @@ img{
 [class*="_wrapper"]{
 	overflow: hidden;
 }
+[class*="img"]{
+	border: none;
+	border-width: 0;
+}
 [class*="_title"]{
 	font-family: 'Coiny', cursive;
 	text-transform: uppercase;
