@@ -423,6 +423,7 @@ img{
 }
 .navbar_img{
 	height: 100%;
+	border: 0;
 }
 /*header*/
 .header_wrapper{
@@ -509,7 +510,7 @@ img{
              -2px -2px 0 #4653B6;
 }
 .header_img{
-	border: none;
+	border: 0;
 }
 .header_content .header_img{
 	width: 100%;
