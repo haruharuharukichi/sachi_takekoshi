@@ -60,6 +60,7 @@ h6{
 }
 p{
 	font-size: 1rem;
+	margin: 1rem 0;
 }
 .font-xl{
 	font-size: 3rem;
@@ -245,6 +246,9 @@ img{
 	align-items: center;
 	justify-content: center;
 }
+.grid-1.grid_body{
+	--template-rows-xs:10% 80% 10%;
+}
 /*global nav*/
 .navbar_wrapper{
 	font-family: 'Coiny', cursive;
@@ -308,10 +312,10 @@ img{
 	        transform-origin: left;
 	transition: .3s;
 }
-.navbar_toggler span:nth-of-type(2){
+.navbar_toggler span:nth-child(2){
 	top: calc(100% / 2 + 20%);
 }
-.navbar_toggler span:nth-of-type(3){
+.navbar_toggler span:nth-child(3){
 	top: calc(100% / 2);
 	left: 50%;
 	width: 1rem;
@@ -328,7 +332,7 @@ img{
 .navbar_toggler.active span{
 	top: calc(100% / 2 - 1px);
 }
-.navbar_toggler.active span:nth-of-type(3){
+.navbar_toggler.active span:nth-child(3){
 	top: calc(100% / 2);
 	-webkit-transform: translate(0,-50%) rotateZ(45deg);
 	        transform: translate(0,-50%) rotateZ(45deg);
@@ -343,6 +347,7 @@ img{
 	--template-cols-md:1fr;
 	--template-cols-lg:repeat(2,1fr);
 	--template-cols-xl:repeat(2,1fr);
+	--template-rows-xs:60% 40%;
 	width: 100%;
 	height: 100vh;
 	-webkit-transform: translateX(100%);
@@ -359,8 +364,9 @@ img{
 	-ms-grid-row-align: center;
 	    align-self: center;
 }
-.navbar_inner:nth-of-type(2){
-	margin: 10%;
+.navbar_inner:nth-child(2){
+	height: 100%;
+	padding: 10%;
 }
 .navbar_brand{
 	padding: 0;
@@ -408,6 +414,9 @@ img{
              1px -1px 0 #4653B6,
              -1px -1px 0 #4653B6;
 }
+.navbar_img{
+	height: 100%;
+}
 /*header*/
 .header_wrapper{
 	position: relative;
@@ -426,9 +435,6 @@ img{
 	    grid-template-rows: repeat(3,1fr);
 	width: 100%;
 	height: 100%;
-}
-.header_img{
-	border: .5rem solid #4653B6;
 }
 .header_bgr .header_img{
 	-ms-grid-column: 3;
