@@ -187,7 +187,6 @@ img{
 	-webkit-transform: translate(0, 0);
 }
 .Inview [class*="img"] {
-	border: 0px solid #4653B6;
 	opacity: 0;
 	-webkit-transform-origin: center;
 	        transform-origin: center;
@@ -195,7 +194,6 @@ img{
 	-webkit-transform: scale(.8,.8);
 }
 .Viewing [class*="img"]{
-	border-width: .5rem;
 	opacity: 1.0;
 	transform: scale(1,1);
 	-webkit-transform: scale(1,1);
