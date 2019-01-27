@@ -581,7 +581,7 @@ img{
 	background-color: rgba(247,247,247,.9);
 }
 .grid_body p{
-	margin: 0;
+	margin: auto 0;
 }
 .grid_body .body_description{
 	font-family: 'Coiny', cursive;
