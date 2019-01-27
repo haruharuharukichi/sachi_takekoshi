@@ -241,8 +241,11 @@ img{
 	grid-gap: 0;
 	-ms-grid-columns: 100%;
 	    grid-template-columns: 100%;
-	-ms-grid-rows: (1fr)[3];
-	    grid-template-rows: repeat(3,1fr);
+	--template-rows-xs:10% 80% 10%;
+	--template-rows-sm:15% 70% 15%;
+	--template-rows-md:30% 40% 30%;
+	--template-rows-lg:repeat(3,calc(100%/3));
+	--template-rows-xl:repeat(3,calc(100%/3));
 	align-items: center;
 	justify-content: center;
 }
