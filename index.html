@@ -1,34 +1,21 @@
 <!DOCTYPE html>
-<html lang="ja">
 <head>
-	<meta charset="utf-8n">
-	<meta name="Description" CONTENT="ここにページのディスクリプション">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<!--Setting ogp-->
-	<meta property="og:title" content="ここにタイトル" >
-	<meta property="og:type" content="ここにタイプ" >
-	<meta property="og:url" content="ここにページのURL" >
-	<meta property="og:image" content="ここにサムネイル画像のURL" >
-	<meta property="og:site_name" content="ここにサイト名" >
-	<meta property="og:description" content="ここにページのディスクリプション" >
-	<!--Facebook ogp-->
-	<meta property="fb:app_id" content="App-ID（15文字の半角数字）" >
-	<!--Twitter cards-->
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="@Twitterアカウント">
+	<meta charset="UTF-8">
+	<meta name="author" content="Haruki Kawashita">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>SACHI TAKEKOSHI official site</title>
+	<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+	<link rel='dns-prefetch' href='//s.w.org' />
+	<link rel='stylesheet' id='wp-block-library-css'  href='./lib/css/wp-block.css' type='text/css' media='all' />
 	<link href="https://fonts.googleapis.com/css?family=Coiny|Work+Sans:900" rel="stylesheet">
+	<link rel='stylesheet' id='iota-css'  href='./lib/css/iota.css' type='text/css' media='' />
+	<link rel='stylesheet' id='style-css'  href='./style.css' type='text/css' media='' />
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="./lib/css/iota.css" />
-	<link rel="stylesheet" href="./style.css" />
 </head>
-<!--※インスタは通常記事単位での埋め込みしかできません。今回は特殊なサービスを利用してアカウントを表示していますが、2020年以降は表示されなくなる可能性があります。ご注意ください。-->
-<body class="home">
-	<div class="all_wrapper">
+<body class="home blog logged-in hfeed singular">
+	<div id="wrapper" class="all_wrapper">
 		<nav class="navbar_wrapper" id="globalNavi" role="navigation">
-			<button id="navbarToggler" class="navbar_toggler" type="button">
+			<button id="navbarToggler" class="ScrollAppear navbar_toggler" type="button">
 				<span></span>
 				<span></span>
 				<span></span>
@@ -38,131 +25,196 @@
 					<p class="flex navbar_brand">
 						SACHI TAKEKOSHI<br>official site
 					</p>
-					<ul class="navbar_list font-sm">
-						<li><a href="./index.html" class="navbar_link">home</a></li>
-						<li><a href="./page.html" class="navbar_link">About</a></li>
-						<li><a href="./page.html" class="navbar_link">activity</a></li>
-						<li><a href="./page.html" class="navbar_link">team</a></li>
-						<li><a href="./page.html" class="navbar_link">sns</a></li>
+					<ul class="navbar_list font-sm"><li id="menu-item-316" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-316"><a class="navbar_link"href="./index.html">TOP</a></li>
+						<li id="menu-item-67" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67"><a class="navbar_link"href="./profile.html">PROFILE</a></li>
+						<li id="menu-item-324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-324"><a class="navbar_link"href="./produce.html">Produce</a></li>
+						<li id="menu-item-120" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-120"><a class="navbar_link"href="./company.html">COMPANY</a></li>
 					</ul>
 				</div>
 				<div class="navbar_inner Inview">
-					<img src="./lib/images/navbar_img.jpg" class="navbar_img">
+					<img src="./lib/images/navbar_img.jpg" alt="navigation cap" class="navbar_img">
 				</div>
 			</div>
 		</nav>
-		<header class="flex header_wrapper Inview">
+		<header role="banner" class="flex header_wrapper Inview">
 			<div class="grid header_bgr">
-				<img src="./lib/images/headerBgr_img1.jpg" class="header_img FadeIn Left">
-				<img src="./lib/images/headerBgr_img2.jpeg" class="header_img FadeIn Left">
-				<img src="./lib/images/headerBgr_img3.jpeg" class="header_img FadeIn Right">
-				<img src="./lib/images/headerBgr_img4.jpg" class="header_img FadeIn Right">
+				<img src="./lib/images/headerBgr_img1.jpg" alt="header background cap 1" class="header_img FadeIn Left">
+				<img src="./lib/images/headerBgr_img2.jpeg" alt="header background cap 2" class="header_img FadeIn Left">
+				<img src="./lib/images/headerBgr_img3.jpeg" alt="header background cap 3" class="header_img FadeIn Right">
+				<img src="./lib/images/headerBgr_img4.jpg" alt="header background cap 4" class="header_img FadeIn Right">
 			</div>
 			<div class="header_content">
 				<h1 class="header_title FadeIn Left">I am that I am !</h1>
-				<img src="./lib/images/header_img.JPG" class="header_img">
+				<img src="./lib/images/header_img.JPG" alt="header cap" class="header_img">
 				<p class="header_description FadeIn Ex">
 					<span>私は、私だ。</span><br><span>竹腰　紗智オフィシャルサイト</span>
 				</p>
 			</div>
 		</header>
-		<div class="container grid_wrapper">
-			<main role="main" class="grid grid-main">
-				<div class="grid_item empty ex-hrz all">
-					<div class="grid_body"></div>
+		<div class="container main_wrapper"><main role="main" class="grid grid-main">
+			<div class="main_card square empty ex-hrz all">
+				<div class="card_body"></div>
+			</div>
+			<div class="main_card square title ex-hrz Inview">
+				<h2 class="flex card_body">Who is me ?</h2>
+			</div>
+			<div id="IndexMainImg1" class="main_card square baloon toLeft ex-vrt ex-hrz Inview">
+				<div class="flex card_body">
+					<div>
+						<p class="card_description" style="text-align: center;">takekoshi sachi</p>
+						<h2 class="card_title">竹腰 紗智</h2>
+						<p>
+							「だれでも、変われる」が信条のブロガー<br>
+							出版実現に向け２０１４年に開設したブログは瞬く間に人気を獲得し、わずか半年で夢を実現<br>
+							『世界は自分で創る（上）』（ヒカルランド）はベストセラーに<br>
+							「自分自身で在ること」の大切さを伝えるために様々な活動を行っている
+						</p>
+					</div>
 				</div>
-				<div class="grid_item title ex-hrz Inview">
-					<h2 class="flex grid_body">Who is me ?</h2>
-				</div>
-				<div id="IndexMainImg1" class="grid_item baloon toLeft ex-vrt ex-hrz Inview">
-					<div class="flex grid_body">
-						<div>
-							<p class="body_description">takekoshi sachi</p>
-							<h2 class="body_title">竹腰 紗智</h2>
-							<p>
-								「だれでも、変われる」が信条のブロガー<br>
-								出版実現に向け２０１４年に開設したブログは瞬く間に人気を獲得し、わずか半年で夢を実現<br>
-								『世界は自分で創る（上）』（ヒカルランド）はベストセラーに<br>
-								「自分自身で在ること」の大切さを伝えるために様々な活動を行っている
-							</p>
+			</div>
+			<div id="IndexMainImg1" class="main_card square img ex-vrt ex-hrz Inview">
+				<img src="./lib/images/main_1.jpg" class="card_body">
+			</div>
+			<div class="main_card square empty ex-hrz">
+				<div class="card_body"></div>
+			</div>
+			<div class="main_card square empty ex-hrz all">
+				<div class="card_body"></div>
+			</div>
+			<div class="main_card square empty ex-hrz">
+				<div class="card_body"></div>
+			</div>
+			<div class="main_card square title ex-hrz Inview">
+				<h2 class="flex card_body">My activity</h2>
+			</div>
+			<div class="main_card square bgr ex-hrz ex-vrt Inview">
+				<div class="grid grid-sub card_body" style="background-image: url(./lib/images/main_2.jpeg);">
+					<div class="main_card square title Inview">
+						<h2 class="flex card_body">be you</h2>
+					</div>
+					<div class="main_card square text Inview">
+						<div class="grid grid-1 card_body">
+							<h2 class="font-xs card_description">publish</h2>
+							<p>ベストセラー『世界は自分で創る（上）』</p>
+						</div>
+					</div>
+					<div class="main_card square text Inview">
+						<div class="grid grid-1 card_body">
+							<h2 class="font-xs card_description">jewelry</h2>
+							<p>オリジナルブランド</p>
+						</div>
+					</div>
+					<div class="main_card square text Inview">
+						<div class="grid grid-1 card_body">
+							<h2 class="font-xs card_description">cafe</h2>
+							<p>想像が創造されるカフェ<br>Happy cafe</p>
 						</div>
 					</div>
 				</div>
-				<div id="IndexMainImg1" class="grid_item img ex-vrt ex-hrz Inview">
-					<img src="./lib/images/main_1.jpg" class="grid_body">
+			</div>
+			<div class="main_card square text link Inview">
+				<a href="./profile" class="grid grid-1 card_body">
+					<h2 class="font-xs card_description">detail</h2>
+					<p>ありたい私で、ある為に。</p>
+					<p>more</p>
+				</a>
+			</div>
+			<div class="main_card square img Inview">
+				<img src="./lib/images/main_3.jpg" class="card_body">
+			</div>
+			<div class="main_card square empty ex-hrz">
+				<div class="card_body"></div>
+			</div>
+			<div class="main_card square empty ex-hrz all">
+				<div class="card_body"></div>
+			</div>
+			<div class="main_card square title ex-hrz Inview">
+				<h2 class="flex card_body">Produce</h2>
+			</div>
+			<div class="main_card square empty ex-hrz">
+				<div class="card_body"></div>
+			</div>
+			<div class="main_card square ex-hrz toLeft Inview">
+				<div class="flex card_body">
+					<p>
+						想いは、カタチにするからこそ伝わる。<br>
+						強い想いと斬新なインスピレーションから生み出された商品は、<br>
+						この活動の一つの「カタチ」です。<br>
+						きっとあなたに、誇りと自信を与えてくれるでしょう。
+					</p>
 				</div>
-				<div class="grid_item empty ex-hrz">
-					<div class="grid_body"></div>
-				</div>
-				<div class="grid_item empty ex-hrz all">
-					<div class="grid_body"></div>
-				</div>
-				<div class="grid_item empty ex-hrz Inview">
-					<div class="grid_body"></div>
-				</div>
-				<div class="grid_item title ex-hrz Inview">
-					<h2 class="flex grid_body">My activity</h2>
-				</div>
-				<div class="grid_item bgr ex-hrz ex-vrt Inview">
-					<div class="grid grid-sub grid_body" style="background-image: url(./lib/images/main_2.jpeg);">
-						<div class="grid_item title Inview">
-							<h2 class="flex grid_body">be you</h2>
-						</div>
-						<div class="grid_item text Inview">
-							<div class="grid grid-1 grid_body">
-								<h2 class="font-xs body_description">publish</h2>
-								<p>ベストセラー『世界は自分で創る（上）』</p>
-							</div>
-						</div>
-						<div class="grid_item text Inview">
-							<div class="grid grid-1 grid_body">
-								<h2 class="font-xs body_description">jewelry</h2>
-								<p>オリジナルブランド</p>
-							</div>
-						</div>
-						<div class="grid_item text Inview">
-							<div class="grid grid-1 grid_body">
-								<h2 class="font-xs body_description">cafe</h2>
-								<p>想像が創造されるカフェ<br>Happy cafe</p>
-							</div>
+			</div>
+			<div class="main_card square bgr ex-hrz ex-vrt Inview">
+				<div class="grid grid-sub card_body" style="background-image: url(./lib/images/logo_lunedeunivers.PNG);">
+					<div class="main_card square title Inview">
+						<h2 class="flex card_body">想いを、<br>カタチに。</h2>
+					</div>
+					<div class="main_card square text Inview">
+						<div class="grid grid-1 card_body">
+							<h2 class="font-xs card_description">jewelry</h2>
+							<p>月と、宇宙。</p>
 						</div>
 					</div>
-				</div>
-				<div class="grid_item text link Inview">
-					<a href="#" class="grid grid-1 grid_body">
-						<h2 class="font-xs body_description">activity</h2>
-						<p>ありたい私で、ある為に。</p>
-						<p>more</p>
-					</a>
-				</div>
-				<div class="grid_item img Inview">
-					<img src="./lib/images/main_3.jpg" class="grid_body">
-				</div>
-				<div class="grid_item empty ex-hrz Inview">
-					<div class="grid_body"></div>
-				</div>
-				<div class="grid_item empty ex-hrz all Inview">
-					<div class="grid_body"></div>
-				</div>
-				<div class="grid_item title ex-hrz Inview">
-					<h2 class="flex grid_body">SNS</h2>
-				</div>
-				<div id="instagram" class="grid_item text ex-hrz ex-vrt Inview">
-					<div class="grid_body">
-						<!-- InstaWidget -->
-						<a href="https://instawidget.net/v/user/happy_official0904" id="link-0e650199d5c034284c2eb3ce4a40abbb35d93144ea94afa660c11857217635c7">@happy_official0904</a>
-						<script src="https://instawidget.net/js/instawidget.js?u=0e650199d5c034284c2eb3ce4a40abbb35d93144ea94afa660c11857217635c7&width=100%"></script>
+					<div class="main_card square text Inview">
+						<div class="grid grid-1 card_body">
+							<h2 class="font-xs card_description">cosmetic</h2>
+							<p>coming soon</p>
+						</div>
+					</div>
+					<div class="main_card square link text Inview">
+						<a href="./produce" class="grid grid-1 card_body">
+							<h2 class="font-xs card_description">link</h2>
+							<p>想いを見る</p>
+							<p>more</p>
+						</a>
 					</div>
 				</div>
-				<!-- InstaWidget -->
-
-			</main>
-		</div>
-		<footer role="contentinfo" class="inline-center">
-			<p>© 2019~ takekoshi sachi</p>
-		</footer>
+			</div>
+			<div class="main_card square empty ex-hrz">
+				<div class="card_body"></div>
+			</div>
+			<div class="main_card square empty ex-hrz all">
+				<div class="card_body"></div>
+			</div>
+			<div class="main_card square title ex-hrz Inview">
+				<h2 class="flex card_body">SNS</h2>
+			</div>
+			<div id="instagram" class="main_card square text ex-hrz ex-vrt Inview">
+				<div class="card_body">
+					<!-- InstaWidget -->
+					<a href="https://instawidget.net/v/user/happy_official0904" id="link-0e650199d5c034284c2eb3ce4a40abbb35d93144ea94afa660c11857217635c7">@happy_official0904</a>
+					<script src="https://instawidget.net/js/instawidget.js?u=0e650199d5c034284c2eb3ce4a40abbb35d93144ea94afa660c11857217635c7&width=100%"></script>
+				</div>
+			</div>
+		</main>
 	</div>
-	<script type='text/javascript' src='./lib/js/jquery.inview.min.js'></script>
-	<script type='text/javascript' src='./lib/js/main.js'></script>
+	<footer role="contentinfo" class="container inline-center footer_wrapper">
+		<div id="footerScroller" class="flex ScrollAppear footer_scroller">
+			<span class="footer_arrow"></span>
+		</div>
+		<div class="widget_text widget footer_widget">
+			<div class="textwidget custom-html-widget">
+				<h2 class="footer_title">
+					Follow me
+				</h2>
+				<div class="flex footer_list block">
+					<a href="https://www.instagram.com/happy_official0904/?hl=ja" class="footer_link"><img src="./lib/images/Instagram_logo-1.png" alt="Instagram" class="footer_img"></a>
+				</div>
+			</div>
+		</div>
+		<div class="widget footer_widget">
+			<div class="textwidget">
+				<div class="flex footer_list"><a class="footer_link" href="./privacypolicy.html">PRIVACY POLICY</a></div>
+			</div>
+		</div>
+		<div class="widget footer_widget">
+			<div class="textwidget">
+				<p>© 2019~ HappyHoldings</p>
+			</div>
+		</div>
+	</footer>
+</div>
+<script type='text/javascript' src='./lib/js/jquery.inview.min.js'></script>
+<script type='text/javascript' src='./lib/js/main.js'></script>
 </body>
 </html>
